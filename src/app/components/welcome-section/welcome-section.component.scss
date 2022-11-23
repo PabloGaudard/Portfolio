@@ -55,6 +55,11 @@ section {
     background-color: #fff;
     z-index: 2;
 
+    &-sql{
+      background-position-y: 35%;
+      background-size: 75%;
+    }
+
     &-python {
       left: 12.5%;
       bottom: 9%;
