@@ -1,0 +1,42 @@
+<section>
+    <app-container>
+        <div class="flex flex-col justify-between py-16 sm:flex-row">
+            <div>
+                <h1 class="font-semibold text-orange-600 text-lg">
+                    👋 Olá! Bem-vindo
+                </h1>
+                <h1 class="font-bold text-4xl pt-3" id="main-heading">
+                    Pablo Gaudard<br>
+                    FullStack<br>
+                </h1>
+                <p class="my-7 text-gray-600">
+                    Sou <b>Desenvolvedor</b> com experiência em desenvolvimento web<br>
+                    Ajudo pessoas a construir <b>sites incríveis!</b>
+                </p>
+                <button class="bg-blue-700 text-white px-9 py-3 rounded-full font-semibold mb-16">Contato</button>
+                <br>
+                <div class="flex flex-row">
+                    <a class="flex justify-center items-center border-2 border-orange-600 rounded-full w-10 h-10"
+                        href="https://www.linkedin.com/in/pablo-gaudard" target="_blank">
+                        <fa-icon [icon]="faLinkedinIn" class="text-orange-600"></fa-icon>
+                    </a>
+                    <a class="flex justify-center items-center border-2 border-orange-600 rounded-full w-10 h-10 ml-4 mb-14"
+                        href="https://github.com/PabloGaudard" target="_blank">
+                        <fa-icon [icon]="faGithub" class="text-orange-600"></fa-icon>
+                    </a>
+                </div>
+                <br>
+                <fa-icon [icon]="faArrowDown" class="text-xl text-gray-500"></fa-icon>
+            </div>
+            <div id="myself">
+                <img src="../assets/me.png" alt="">
+                <div class="semicircle"></div>
+                <div class="icon icon-csharp" style="background-image: url(../assets/icons/csharp.png)"></div>
+                <div class="icon icon-python" style="background-image: url(../assets/icons/python.png)"></div>
+                <div class="icon icon-sql" style="background-image: url(../assets/icons/sql.png)"></div>
+                <div class="icon icon-firebase" style="background-image: url(../assets/icons/firebase.png)"></div>
+                <div class="icon icon-angular" style="background-image: url(../assets/icons/angular.png)"></div>
+            </div>
+        </div>
+    </app-container>
+</section>
