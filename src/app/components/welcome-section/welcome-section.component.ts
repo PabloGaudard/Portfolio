@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub, faMediumM } from '@fortawesome/free-brands-svg-icons';
 import { faArrowAltCircleDown } from '@fortawesome/free-regular-svg-icons';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,6 +14,7 @@ export class WelcomeSectionComponent implements OnInit {
   faGithub = faGithub;
   faArrowAltCircleDown = faArrowAltCircleDown;
   faArrowDown = faArrowDown;
+  faMedium = faMediumM;
 
   constructor() { }
 

@@ -1,33 +1,40 @@
-// #main-heading {
-//   position: relative;
-//   display: inline-block;
-//   &::before {
-//     content: "";
-//     background-color: red;
-//     position: absolute;
-//     width: 120px;
-//     height: 120px;
-//     border-radius: 50%;
-//     z-index: -1;
-//     right: -42px;
-//     top: -15px;
-//     background: rgb(240,175,53);
-// background: linear-gradient(194deg, rgb(255, 159, 34) 35%, rgb(255, 239, 20) 100%);
-//   }
-// }
+#main-heading {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: "";
+    background-color: red;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: -1;
+    right: -42px;
+    top: -15px;
+    background: rgb(240, 175, 53);
+    background: linear-gradient(
+      194deg,
+      rgb(255, 159, 34) 35%,
+      rgb(255, 239, 20) 100%
+    );
+  }
+}
 
 section {
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 26px 32px;//, rgba(0, 0, 0, 0.07) 0px 42px 64px;
-
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 26px 32px; //, rgba(0, 0, 0, 0.07) 0px 42px 64px;
+  overflow: hidden;
 }
 
 #myself {
   position: relative;
+  width: 50%;
+  //  outline:  1px solid red;
 
   img {
     position: absolute;
-    width: 50%;
-    left: 25%;
+    width: 100%;
+    //    left: 0%;
+    top: -12.5%;
     z-index: 1;
   }
   .semicircle {
@@ -35,10 +42,11 @@ section {
     height: 250px;
     width: 500px;
     border-radius: 1000px 1000px 0 0;
-    background-color: rgb(29, 78, 216);
+    background-color: #fea614;
   }
 
   .icon {
+    //display: none !important;;
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -55,14 +63,14 @@ section {
     background-color: #fff;
     z-index: 2;
 
-    &-sql{
+    &-sql {
       background-position-y: 35%;
       background-size: 75%;
     }
 
     &-python {
-      left: 12.5%;
-      bottom: 9%;
+      left: 2%;
+      bottom: 30%;
     }
 
     &-firebase {
@@ -83,7 +91,7 @@ section {
     }
 
     &-csharp {
-      left: 16%;
+      left: 8%;
       top: 20%;
       height: 4.5rem;
       width: 4.5rem;
